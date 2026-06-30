@@ -1,2 +1,28 @@
-# strike-gundam-pet
-Q版强袭高达 Codex 桌面宠物，包含战斗姿态动画、透明背景精灵图、pet.json 配置和预览图，可用于 Codex 桌宠安装。
+# Strike Gundam Pet
+
+Q-version Strike Gundam Codex desktop pet, generated as a 2D cartoon-style battle companion.
+
+This repository contains the Codex pet package files:
+
+- `pet.json` - Codex desktop pet manifest
+- `spritesheet.webp` - transparent animated sprite atlas
+- `contact-sheet.png` - visual QA contact sheet
+- `previews/*.gif` - per-state animation previews
+- `validation.json` and `review.json` - generation validation reports
+- `install-to-codex.ps1` - local Windows install helper
+
+## Install
+
+On Windows, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\install-to-codex.ps1
+```
+
+The pet will be copied to:
+
+```text
+C:\Users\lxn\.codex\pets\strike-gundam
+```
+
+Restart Codex or refresh the pet list after installation.
