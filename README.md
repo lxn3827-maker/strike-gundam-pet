@@ -1,42 +1,62 @@
-# Strike Gundam Pet
+# 强袭高达宠物
 
-Q-version Strike Gundam Codex desktop pet, generated as a 2D cartoon-style battle companion.
+Q版强袭高达 Codex 桌面宠物，以 2D 卡通风格的战斗伙伴形象呈现。
 
-## Preview
+## 预览
 
-![Strike Gundam pet contact sheet](contact-sheet.png)
+![强袭高达桌宠预览](contact-sheet.png)
 
-### Animation States
+## 动画状态
 
-| Idle | Running | Waving |
-| --- | --- | --- |
-| ![Idle animation](previews/idle.gif) | ![Running animation](previews/running.gif) | ![Waving animation](previews/waving.gif) |
+GitHub 首页的动画预览需要同时上传 `previews` 文件夹。上传完整文件后，下方 GIF 会自动显示。
 
-| Jumping | Waiting | Failed |
-| --- | --- | --- |
-| ![Jumping animation](previews/jumping.gif) | ![Waiting animation](previews/waiting.gif) | ![Failed animation](previews/failed.gif) |
+### 闲置
 
-This repository contains the Codex pet package files:
+![闲置动画](previews/idle.gif)
 
-- `pet.json` - Codex desktop pet manifest
-- `spritesheet.webp` - transparent animated sprite atlas
-- `contact-sheet.png` - visual QA contact sheet
-- `previews/*.gif` - per-state animation previews
-- `validation.json` and `review.json` - generation validation reports
-- `install-to-codex.ps1` - local Windows install helper
+### 跑步
+
+![跑步动画](previews/running.gif)
+
+### 挥手
+
+![挥手动画](previews/waving.gif)
+
+### 跳跃
+
+![跳跃动画](previews/jumping.gif)
+
+### 等待
+
+![等待动画](previews/waiting.gif)
+
+### 失败
+
+![失败动画](previews/failed.gif)
+
+## 文件内容
+
+此仓库包含 Codex pet 软件包文件：
+
+- `pet.json` - Codex 桌宠配置文件
+- `spritesheet.webp` - 透明背景精灵图
+- `contact-sheet.png` - 总览预览图
+- `previews/*.gif` - 各状态动画预览
+- `validation.json` 和 `review.json` - 校验报告
+- `install-to-codex.ps1` - Windows 本地安装脚本
 
 ## Install
 
-On Windows, run:
+在 Windows 上运行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\install-to-codex.ps1
 ```
 
-The pet will be copied to:
+桌宠会被复制到：
 
 ```text
 C:\Users\lxn\.codex\pets\strike-gundam
 ```
 
-Restart Codex or refresh the pet list after installation.
+安装后重启 Codex 或刷新桌宠列表。
